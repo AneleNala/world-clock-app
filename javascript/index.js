@@ -15,10 +15,13 @@ let dakarTime = moment().tz("Africa/Dakar");
 
 dakarDateElement.innerHTML = dakarTime.format("D MMMM YYYY");
 dakarTimeElement.innerHTML = dakarTime.format("H:mm:ss [<small>]A[</small]");
-}
 
+}
 function SelectedCity(event) {
     let cityTimeZone = event.target.value;
+    if (cityTimeZone === "current") {
+        cityTimeZone = moment.tz.guess();
+    }
     let cityName = cityTimeZone.replace("_", " ").split("/")[1];
     let timeZone = moment().tz(cityTimeZone);
     let cityElement = document.querySelector("#cities");
