@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.44/moment-timezone-with-data-1970-2030.min.js"></script>
 </head>
 <body>
 <div class="container">   
-<header class="local time">
+<header class="local-time">
     <h1>World Clock</h1>
 </header>
 <main>
@@ -21,25 +23,25 @@
     <option value="">Dakar</option>
     </select>
 
-    <div class="cities">
+    <div class="cities" id="new-york">
         <div>
         <h2>New York</h2>
-        <div class="date">
+        <div class="date" >
             12 April 2025
         </div>
         </div>
-        <div class="time">
+        <div class="time" >
             10:09:30 <small>AM</small>
         </div>
     </div>
-    <div class="cities">
+    <div class="cities" id="dakar">
         <div>
         <h2>Dakar</h2>
-        <div class="date">
+        <div class="date" >
             10 March 2026
         </div>
         </div>
-        <div class="time">
+        <div class="time" >
             20:23:56 <small>AM</small>
         </div>
     </div>
