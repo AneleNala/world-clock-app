@@ -37,6 +37,7 @@ function SelectedCity(event) {
             ${timeZone.format("H:mm:ss")} <small>${timeZone.format("A")}</small>
         </div>
     </div>
+    <a href="/">All Cities</a>
     `
 
 
