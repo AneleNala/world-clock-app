@@ -76,7 +76,7 @@ a{
     padding: 30px;
     
 }
-.cities{
+.city{
     display: flex;
     justify-content: space-between;
     padding: 10px;

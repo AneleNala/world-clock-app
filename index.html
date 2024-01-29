@@ -17,13 +17,15 @@
     <h1>World Clock</h1>
 </header>
 <main>
-    <select>
+    <select id="city">
     <option value="">Select a city</option>
-    <option value="">New York</option>
-    <option value="">Dakar</option>
+    <option value="America/New_York">New York</option>
+    <option value="Africa/Dakar">Dakar</option>
+    <option value="Africa/Casablanca">Casablanca</option>
+    <option value="Europe/Copenhagen"></option>
     </select>
-
-    <div class="cities" id="new-york">
+<div id="cities">
+    <div class="city" id="new-york">
         <div>
         <h2>New York</h2>
         <div class="date" >
@@ -34,7 +36,7 @@
             10:09:30 <small>AM</small>
         </div>
     </div>
-    <div class="cities" id="dakar">
+    <div class="city" id="dakar">
         <div>
         <h2>Dakar</h2>
         <div class="date" >
@@ -45,6 +47,7 @@
             20:23:56 <small>AM</small>
         </div>
     </div>
+</div>    
 </main>
 </div>
     <footer>This project is coded by <strong>Anele Nala</strong> and is 

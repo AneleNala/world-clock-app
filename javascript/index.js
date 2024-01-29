@@ -17,5 +17,30 @@ dakarDateElement.innerHTML = dakarTime.format("D MMMM YYYY");
 dakarTimeElement.innerHTML = dakarTime.format("H:mm:ss [<small>]A[</small]");
 }
 
+function SelectedCity(event) {
+    let cityTimeZone = event.target.value;
+    let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+    let timeZone = moment().tz(cityTimeZone);
+    let cityElement = document.querySelector("#cities");
+    cityElement.innerHTML = `
+    <div class="city">
+        <div>
+        <h2>${cityName}</h2>
+        <div class="date" >
+            ${timeZone.format("D MMMM YYYY")}
+        </div>
+        </div>
+        <div class="time" >
+            ${timeZone.format("H:mm:ss")} <small>${timeZone.format("A")}</small>
+        </div>
+    </div>
+    `
+
+
+    
+}
 updateTime();
 setInterval(updateTime, 1000);
+
+let SelectCities = document.querySelector("#city");
+SelectCities.addEventListener("change", SelectedCity);
