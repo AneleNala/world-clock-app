@@ -6,7 +6,7 @@ let newyorkTimeElement = newyorkElement.querySelector(".time");
 let newyorkTime = moment().tz("America/New_York");
 
 newyorkDateElement.innerHTML = newyorkTime.format("D MMMM YYYY");
-newyorkTimeElement.innerHTML = newyorkTime.format("H:mm:ss [<small>]A[</small]")
+newyorkTimeElement.innerHTML = newyorkTime.format("HH:mm:ss [<small>]A[</small]")
 
 let dakarElement = document.querySelector("#dakar");
 let dakarDateElement = dakarElement.querySelector(".date");
@@ -14,7 +14,16 @@ let dakarTimeElement = dakarElement.querySelector(".time");
 let dakarTime = moment().tz("Africa/Dakar");
 
 dakarDateElement.innerHTML = dakarTime.format("D MMMM YYYY");
-dakarTimeElement.innerHTML = dakarTime.format("H:mm:ss [<small>]A[</small]");
+dakarTimeElement.innerHTML = dakarTime.format("HH:mm:ss [<small>]A[</small]");
+
+let tokyoElement = document.querySelector("#tokyo");
+let tokyoDateElement = tokyoElement.querySelector(".date");
+let tokyoTimeElement = tokyoElement.querySelector(".time");
+let tokyoTime = moment().tz("Asia/Tokyo");
+
+tokyoDateElement.innerHTML = tokyoTime.format("D MMMM YYYY");
+tokyoTimeElement.innerHTML = tokyoTime.format("HH:mm:ss [<small>]A[</small]");
+
 
 }
 function SelectedCity(event) {
@@ -34,7 +43,7 @@ function SelectedCity(event) {
         </div>
         </div>
         <div class="time" >
-            ${timeZone.format("H:mm:ss")} <small>${timeZone.format("A")}</small>
+            ${timeZone.format("HH:mm:ss")} <small>${timeZone.format("A")}</small>
         </div>
     </div>
     <a href="/">All Cities</a>
