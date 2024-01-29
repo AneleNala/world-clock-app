@@ -1,7 +1,88 @@
 h1{
     text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+}
+h2{
+    color: white;
+    font-size: 30px;
+}
+p{
+    color: white;
+}
+
+div{
+    color: white;
+
+}
+body{
+    background: #000000;
+    font-family: "Manrope", sans-serif; 
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    width: auto;
+    margin:0 auto;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(32, 29, 253, 1) 0%, rgba(69, 239, 252, 1) 100%);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    
+}
+
+strong{
+    font-size: 20px;
+    
+}
+
+select{
+    width:600px;
+    margin:10px auto;
+    padding: 20px;
+    background:#0f0f0f;
+    color:white;
+    font-size:16px;
+    border-radius: 10px;
+    border: 1px solid 211313;
+    font-family:"Manrope", sans-serif  ;
+}
+
+small{
+    font-size: 10px;
 }
 
 footer{
     text-align: center;
+    color: white;
+    margin: 30px;
+    font-size: 20px;
+
+}
+
+a{
+    color: blue;
+}
+
+.container{
+    background: #0f0f0f;
+    width:600px;
+    margin: 40px auto;
+    border: 1px solid #0f0f0f;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+.cities{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.time{
+    font-size: 86px;
 }
